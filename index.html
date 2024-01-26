@@ -1,19 +1,492 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Title of the document</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<html lang="en">
 
-    <body>
-        <h1> Odin Recipes</h1>
-    
-        <div class= "container">
-            <a href="./recipes/lasagna.html">Lasagna</a>
-            <a href="./recipes/carbonara.html">Pasta Carbonara</a>
-            <a href="./recipes/pomodoro.html">Pasta Pomodoro</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Noori's Site</title>
+    <link rel="shortcut icon" type="x-icon" href="me.jpg" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="">
+</head>
+
+<body>
+
+    <!-- header area -->
+    <header id="header">
+        <div class="row m-0">
+            <div class="col-3 bgcolor-black">
+                <nav class="primary-nav navbar-expand-md">
+                    <div class="site-title text-center text-light py-5">
+                        <a href="#" class="navbar-brand font-staat" style="font-size: 30px;">MN</a>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <a href="#home" class="nav-item nav-link text-white-50 font-os font-size-16 active">Home</a>
+                        <a href="#about_me" class="nav-item nav-link text-white-50 font-os font-size-16 active">About</a>
+                        <a href="#experience" class="nav-item nav-link text-white-50 font-os font-size-16 active">Experience</a>
+                        <a href="#services" class="nav-item nav-link text-white-50 font-os font-size-16 active">Skills</a>
+                        <a href="#awards" class="nav-item nav-link text-white-50 font-os font-size-16 active">Qualifications</a>
+                        <a href="#projects" class="nav-item nav-link text-white-50 font-os font-size-16 active">Projects</a>
+                        <br><br>
+                    </div>
+                    <div class="counter-number"></div>
+                    <div class="d-flex flex-column align-items-center py-5">
+                        <button type="submit" onclick="window.open('https://onedrive.live.com/edit?id=A9131A2AA0774A69!126&resid=A9131A2AA0774A69!126&ithint=file%2Cdocx&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3cvcyFBbWxLZDZBcUdoT3BmbVF0X1JyYUdMUnVDY1k_ZT03NUxPUkc&migratedtospo=true&wdo=2&cid=a9131a2aa0774a69')" class="btn btn-dark text-uppercase mt-3 mb-3">Download CV</button>
+                        <br><br>
+                        
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/mohammednoori0/" target="_blank" class="mx-2">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/MohammedNoori0" target="_blank" class="mx-2">
+                                <i class="fab fa-github"></i>
+                                
+                            </a>
+                         </div>
+                         
+                    </div>
+                        
+                            <!--class="nav-item nav-link text-white-50 font-os font-size-16 active" target="blank">Blog</a>
+                        <div class="counter-number nav-item nav-link text-white-50 font-os font-size-16 active">Couldn't
+                            read the counter</div> -->
+                    </div>
+                </nav>
+            </div>
         </div>
+        <button class="toggle-button"><span class="fas fa-bars fa-2x"></span></button>
+    </header>
+    <!-- #header area -->
 
-    </body>
+
+    <!-- #site-banner area -->
+    <main id="site-main">
+        <div class="row m-0">
+            <div class="col-md-9 offset-md-3 px-0">
+
+                <!-- site-banner area -->
+                <section class="site-banner " id="home">
+                    <div class="banner-area">
+                        
+                        <div class="author text-center">
+                            <div class="author-img"></div>
+                            
+                            <h1 style="font-size: 30px;">MOHAMMED NOORI</h1>
+                            <BR>
+
+                            <h5 class="text-black font-ram font-size-27">I'm a <span id="typed"></span></h5>
+                        </div>
+                    </div>
+                </section>
+                <!-- #site-banner area -->
+
+                <!-- about me area -->
+                <section class="about px-4 py-5"  id="about_me">
+                    <div class="me py-3">
+                        <h5 class="text-uppercase font-os font-size-16 text-muted">information</h5>
+                        <h1 class="text-uppercase font-staat font-size-34">About Me</h1>
+                    </div>
+                    <div class="row m-0">
+                        <div class="col-sm-5 d-flex justify-content-center align-items-center">
+                            <img src="./kali2.png" alt="profile image" class="img-fluid img-responsive" style="max-width:100%; height:auto; max-height:450px; background-size:cover;">
+                        </div>
+                        
+                        <div class="col-md-7">
+                            <h6 class="text-uppercase font-os font-size-18 text-muted">Hello</h6>
+                            <h5 class="font-ram font-size-20 py-2">I'm Mohammed & I am a<br> <span id="typed_2"></span></h5>
+                            <p class="font-ram text-black-50 py-2">
+                                Dedicated security and cloud specialist with hands-on experience in Python, PowerShell, Linux, SQL, Splunk,
+and AWS/Azure. Committed to enhancing digital security by proactively addressing cybersecurity risks,
+fortifying defenses, safeguarding networks, and creating solutions in the cloud! Certified in CompTIA A+, Network+, Security+, and Google
+Cybersecurity Professional. I am eager to contribute expertise and learn in a dynamic environment.
+                                
+                                
+                                
+                            </p>
+                            
+                        </div>
+                    </div>
+                </section>
+                <!-- #about me area -->
+
+                <!-- experience area -->
+                <section class="experience px-4 py-5 bg-light" id="experience">
+                    <div class="py-3">
+                        <h1 class="text-uppercase font-staat font-size-34">PROFESSIONAL EXPERIENCE</h1>
+                    </div>
+                    
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <div>
+                                <h2 class="font-ram text-uppercase text-black font-staat font-size-20 pt-3">Government Contractor</h2>
+                                <h4 class="font-ram text-black font-staat " style="margin-left: 10px;">W. Harris, G.S.C, Inc.| <em>September 2022 - October 2023</em></h4>
+                                
+                                <p class="font-ram font-size-18 text-black-50"style="margin-left: 20px;">
+                                    • Conducted quality assurance audits and maintained accurate records. <br>
+                                    • Ensured regulatory compliance with federal and state requirements.                                <p>
+                            </div>
+
+        
+                  
+                        </div>
+                    </div>
+                </section>
+                <!-- experience area -->
+
+
+                <!-- ability -->
+                <section class="skill px-4 py-5" id="services">
+                    <div class="ability py-3">
+                        <h1 class="text-uppercase font-staat font-size-34">My skills</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 pl-4">
+                            <p class="font-ram font-size-16 text-black-50 pb-3">
+                                I specialize in architecting and securing solutions through Amazon Web Services (AWS).
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="font-ram font-size-20">Cloud Expertise:</h3>
+                            <ul class="font-ram font-size-16 text-black-50">
+                                <!-- List AWS expertise -->
+                                <li>Compute: EC2, ECS, Lambda</li>
+                                <li>Storage: S3, EBS</li>
+                                <li>Data: RDS, DynamoDB, Aurora, Kinesis, Athena, Glue, EMR</li>
+                                <li>Networking: Amazon VPC, Direct Connect, ELBs</li>
+                                <li>Security: AWS IAM, AWS KMS</li>
+                                <li>Tools: Docker, Terraform, Jenkins, Ansible, GitHub Actions, Kubernetes</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="font-ram font-size-20">Cybersecurity Expertise:</h3>
+                            <ul class="font-ram font-size-16 text-black-50">
+                                <!-- List Azure proficiency -->
+                                <ul>
+                                    <li>Network Security:
+                                      <ul>
+                                        <li>Proficiency in securing networks.</li>
+                                        <li>Tools: Packet sniffing, network monitoring.</li>
+                                      </ul>
+                                    </li>
+                                
+                                    <li>Penetration Testing:
+                                      <ul>
+                                        <li>Skills in identifying and exploiting vulnerabilities.</li>
+                                        <li>Tools: Metasploit, Nmap, Burp Suite.</li>
+                                      </ul>
+                                    </li>
+                                
+                                    <li>SIEM (Security Information and Event Management):
+                                      <ul>
+                                        <li>Knowledge of monitoring and analyzing security events.</li>
+                                        <li>Tools: Splunk, Azure Sentinel.</li>
+                                      </ul>
+                                    </li>
+                                
+                                    <li>Identity and Access Management:
+                                      <ul>
+                                        <li>Expertise in managing user identities securely.</li>
+                                        <li>Tools: Active Directory, LDAP.</li>
+                                      </ul>
+                                    </li>
+                                
+                                    <li>Encryption:
+                                      <ul>
+                                        <li>Understanding and application of encryption techniques.</li>
+                                        <li>Tools: OpenSSL, GPG.</li>
+                                      </ul>
+                                    </li>
+                                
+                                    <li>Governance, Risk, and Compliance (GRC):
+                                      <ul>
+                                        <li>Knowledge of frameworks and practices for managing cybersecurity risk and compliance.</li>
+                                        <li>Tools: GRC platforms, frameworks like ISO 27001.</li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                
+                                
+                            </ul>
+                        </div>
+                        <div class="col-md-12 pl-4 mt-2">
+                            <!-- Additional skills summary -->
+                            <p class="font-ram font-size-16 text-black-50 pb-3">
+                                Additionally, I enjoy HTML/CSS, JavaScript, and Linux.
+                                
+                                Familiar with frameworks/libraries like React and Vue. Love utilizing GIT/Source control.
+
+                                                                
+
+                            
+                                
+                            </p>
+                        </div>
+                        <div class="col-md-12 d-flex" style="justify-content:center; align-items: center;">
+                            <!-- Icons -->
+                            <ul class="list-inline dev-icons">
+                                <li class="list-inline-item">
+                                    <i class="fab fa fa-cloud"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fab fa-html5"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fab fa-css3-alt"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fab fa-brands fa-js"></i>
+                                </li>
+
+                                <li class="list-inline-item">
+                                    <i class="fab fa-brands fa-linux"></i>
+                                </li>
+                               
+                                
+                                <li class="list-inline-item">
+                                    <i class="fab fa-brands fa-react"></i>
+                                </li>
+
+                            
+
+                                <li class="list-inline-item">
+                                    <i class="fab fa-brands fa-git"></i>
+                                </li>
+
+                                <li class="list-inline-item">
+                                    <i class="fab fa fa-chart-pie"></i>
+                                </li>
+                                <!-- Add other relevant icons -->
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </section>
+                
+                <!-- #ability -->
+
+
+                <!-- awards -->
+                <section class="awards px-4 py-5 bg-light" id="awards">
+                    <div class="do py-3">
+                        <h5 class="text-uppercase font-os font-size-16 text-muted">WHAT MAKES ME QUALIFIED? </h5>
+                        <h1 class="text-uppercase font-staat font-size-34"> Education &amp;
+                            Certifications</h1>
+                    </div>
+                        <div class="row">
+                            <div class="w-100 col-md-4">
+
+                                <ul class="fa-ul mb-0 font-ram font-size-16 text-black pb-3">
+                                    <li>
+                                        <i class="fa-li fa fa-graduation-cap text-warning"></i>
+                                        B.S. Cybersecurity & Information Assurance <br>— Western Governors University 
+                                        <p class="text-black-50">
+                                            <img src="./wgu.png"  class="gcp-cert" alt="wgu logo"> Expected December, 2024
+                                        </p>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <i class="fa-li fa fa-trophy text-warning"></i>
+                                        CompTIA Security+ <br>— Specialization Certificate
+                                        <p class="text-black-50">
+                                            <img src="./S+.png"  class="gcp-cert" alt="cert"> Issued September, 2023 
+                                            <span style="padding-left: 10px;"> <!-- Adjust the padding as needed -->
+                                                <a href="https://www.credly.com/badges/4e1654ac-2b27-47c3-8a8a-c0bed0bb75d8/linked_in_profile">view </a>
+                                            </span>                                            
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="w-100 col-md-4">
+
+                                <ul class="fa-ul mb-0 font-ram font-size-16 text-black pb-3">
+                                    <li>
+                                        <i class="fa-li fa fa-trophy text-warning"></i>
+                                        CompTIA A+ <br>— Specialization Certificate
+                                        <p class="text-black-50">
+                                            <img src="./A+.png" class="ibm-cert" alt="cert"> Issued December, 2023 
+                                            <span style="padding-left: 10px;"> <!-- Adjust the padding as needed -->
+                                                <a href="https://www.credly.com/badges/3bafc09f-5eca-4c98-be45-393e5d2c75cb/linked_in_profile">view </a>
+                                            </span>     
+                                        </p>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <i class="fa-li fa fa-trophy text-warning"></i>
+                                        CompTIA Network+ <br>— Specialization Certificate
+                                        <p class="text-black-50">
+                                            <img src="./N+.png" class="gcp-cert" alt="gcp cert"> Issued January, 2024 
+                                            <span style="padding-left: 10px;"> <!-- Adjust the padding as needed -->
+                                                <a href="https://www.credly.com/badges/b85e84b9-72ab-4893-aac1-005edd055285/linked_in_profile">view </a>
+                                            </span>                                          
+                                        </p>
+                                    </li>
+                                    
+                                    
+                                </ul>
+                            </div>
+                            <div class="w-100 col-md-4">
+
+                                <ul class="fa-ul mb-0 font-ram font-size-16 text-black pb-3">
+                                    
+                                    <li>
+                                        <i class="fa-li fa fa-trophy text-warning"></i>
+                                        Google Cybersecurity <br>— Specialization Certificate
+                                        <p class="text-black-50">
+                                            <img src="./coursera.png" class="gcp-cert" alt="cert"> Issued October, 2023
+                                            <span style="padding-left: 10px;"> <!-- Adjust the padding as needed -->
+                                                <a href="https://www.credly.com/badges/94ff99a7-f830-43ed-9b3d-5d76517ac0c0/public_url">view </a>
+                                            </span>      
+                                        </p>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <i class="fa-li fa fa-graduation-cap text-warning"></i>
+                                        
+                                        A.S. Information Technology <br>— Northern Virginia Community College
+                                        <p class="text-black-50">
+                                            <img src="./Nova.png" class="ccaf" alt="Diploma"> Awarded June, 2023 
+                                            
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                </section>
+                <!-- awards -->
+
+                <!--projects-->
+
+                <section class="projects py-5 px-4" id="projects">
+                    <div class="py-3">
+                        <h1 class="text-uppercase font-staat font-size-34"> Deliverables</h1>
+                    </div>
+                    <div class=>
+                        <div class="project-container row mt-3 ">
+                            <div class=" mt-5 col-sm-7 col-xs-12" >
+                                <p class="font-ram text-black  font-size-20" style="text-align: center;">Serverless Website</p>
+                                    <p class="project-description font-ram font-size-16 text-black-50 ">
+                                        This project was a direct response to the Cloud Resume Challenge by Forrest Brazeal. The challenge calls for a dynamic portfolio website deployed on AWS, integrating various services and technologies:
+                                        
+                                    </p>
+                                    <ul class="project-details font-ram font-size-16 text-black-50 pb-3">
+                                        <li>Website Development: A portfolio website was rapidly established using an HTML/CSS template. The focus was on functionality rather than design intricacies.</li>
+                                        <li>S3 Integration: Amazon S3 served as the file storage solution for the website, ensuring accessibility and scalability with ease.</li>
+                                        <li>Security Enhancement: Utilizing Amazon CloudFront for traffic routing and implementing HTTPS via AWS Certificate Manager fortified the website's security posture.</li>
+                                        <li>Visitor Tracking: Implemented a JavaScript-based visitor counter, stored data in DynamoDB, and created an API-Lambda ecosystem for real-time updates.</li>
+                                        <li>Infrastructure as Code (IaC): Overcoming initial hesitancy, employed AWS SAM for defining infrastructure, minimizing manual console interactions, and enabling consistent deployment.</li>
+                                        <li>Source Control & CI/CD: Leveraging separate GitHub repositories for frontend and backend allowed for streamlined version control. Continuous integration and deployment via GitHub actions automated testing and deployment processes.</li>
+                                    </ul>
+                                
+                            </div>
+                            <div class="frame col-sm-5 col-xs-12">
+                                <a href="https://github.com/MohammedNoori0"><img src="./resume.png" title="Serverless Website"
+                                        alt="project1" class="proj-img img-responsive center-block" style=" height:auto; max-width:100%; max-height:400px;"></a>
+                                <div class="details">
+                                    <h2>Serverless Website</h2><br>
+                                    <p><a href="?" title="Live Site"><i
+                                                class="far fa-eye eye"></i></a></p><br>
+                                    <p><a href="https://github.com/MohammedNoori0" title="Source Code"><i
+                                                class="fab fa-github-square giti"></i></a></p><br>
+    
+                                </div>
+                            </div>                                        
+                        </div>
+                        <div class="project-divider"></div>
+                            <style>
+                                /* Add this CSS to your stylesheet or in a <style> tag in your HTML */
+                                .project-divider {
+                                    margin: 20px 0; /* Adjust the margin based on your preference */
+                                    border-top: 2px solid #ccc; /* Change the color as needed */
+                                }
+                            </style>
+                        <div class="project-container row mt-3 ">
+                            <div class=" mt-5 col-sm-7 col-xs-12" >
+                                <p class="font-ram text-black  font-size-20" style="text-align: center;">Cloud Detection</p>
+                                <p class="project-description font-ram font-size-16 text-black-50 ">
+                                    In this lab, I configured and deployed various Azure resources, including a Log Analytics Workspace, Windows 10 Virtual Machine, and Azure Sentinel. The focus was on network and virtual machine security best practices, utilizing data connectors in Azure Sentinel, interpreting Windows Security Event logs, managing Windows Security Policies, and mastering the Kusto Query Language (KQL). The hands-on experience also involved creating custom analytic rules for enhanced security measures, providing a well-rounded understanding of security concepts within the Azure ecosystem.
+
+
+
+
+
+
+                                </p>
+                                <ul class="project-details font-ram font-size-16 text-black-50 pb-3">
+                                    <li>Utilized custom PowerShell scripts to extract metadata from Windows Event Viewer and forwarded it to
+                                        third-party API for geolocation analysis.</li>
+                                    <li>Configured Log Analytics Workspace in Azure, ingesting custom logs with geographic information.</li>
+                                    <li>Configured Azure Sentinel workbook to display global attack data (RDP brute force) on a world map,
+                                        detailing attacks' physical location and magnitude.</li>
+                                </ul>
+                                
+                            </div>
+                            <div class="frame col-sm-5 col-xs-12">
+                                <a href="?"><img src="./Azure.png" title="Cloud Detection"
+                                        alt="project1" class="proj-img img-responsive center-block" style=" height:auto; max-width:100%;max-height:400px"></a>
+                                <div class="details">
+                                    <h2>Cloud Detection w/ Azure</h2><br>
+                                    
+                                    <p><a href="https://github.com/MohammedNoori0" title="Source Code"><i
+                                                class="fab fa-github-square giti"></i></a></p><br>
+                                
+                                </div>
+                            </div>                                        
+                        </div>
+                    </div>
+                </section>
+                
+                <!--projects-->
+
+                <!--footer-->
+                <footer id="footer" class="pt-5 px-3">
+                    <div id="contact_us">
+                        <div class="row py-5">
+                            <div class="col-sm-4 my-5 text-center">
+                                <h6 class="font-ram font-size-16 text-black-50">&copy;2023 Mohammed Noori
+                                </h6>
+                            </div>
+                            <div class="col-sm-4 my-4 text-center py-4">
+                                <div class="footer-title">
+                                    
+                                </div>
+                             
+                            </div>
+                            <div class="social-icons col-sm-4 my-4 text-center">
+                                <a href="https://www.linkedin.com/in/mohammednoori0/" target="blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/MohammedNoori0" target="blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+        integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+
+    <script src="./typed.min.js"></script>
+
+    <script src="./index.js"></script>
+</body>
 
 </html>
