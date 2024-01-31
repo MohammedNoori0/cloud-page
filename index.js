@@ -43,9 +43,9 @@ function toggle_onclick($win, $navbar, width) {
 
 var typed = new Typed('#typed', {
     strings: [
-        'Cloud Architect',
-        'Cloud Engineer',
         'Security Specialist',
+        'Cloud Specialist',
+        'Security Analyst',
         'Cloud Analyst'
     ],
     typeSpeed: 50,
@@ -55,9 +55,9 @@ var typed = new Typed('#typed', {
 
 var typed_2 = new Typed('#typed_2', {
     strings: [
-        'Cloud Enthusiast',
-        'Cloud Engineer',
         'Security Specialist',
+        'Cloud Engineer',
+        'Security Analyst',
         'Cloud Analyst'
     ],
     typeSpeed: 50,
