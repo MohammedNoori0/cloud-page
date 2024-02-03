@@ -56,7 +56,7 @@ var typed = new Typed('#typed', {
 var typed_2 = new Typed('#typed_2', {
     strings: [
         'Security Specialist',
-        'Cloud Engineer',
+        'Cloud Specialist',
         'Security Analyst',
         'Cloud Analyst'
     ],
