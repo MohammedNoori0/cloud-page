@@ -356,3 +356,26 @@ body{
   .counter-number:hover {
     color: #030000; /* Adjust text color on hover */
   }
+
+.row{
+        display: flex;
+        flex-direction: row; /* Aligns children horizontally */
+        flex-wrap: wrap; /* Allows items to wrap onto the next line */
+        justify-content: space-between; /* Spacing between items */
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .col-md-4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Aligns items to the top */
+      }
+      
+      .fa-ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Spreads the li elements evenly */
+      }
